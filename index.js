@@ -74,32 +74,4 @@ timeDisplay.textContent = displayM + ':' + displayS + ':' + displayMs;
 
 
 
-//電卓//
-
-
-
-function clickButton(target){
-  let result = document.getElementById("result")
-let value= target.innerHTML;
-  console.log(result)
-
-
-
-  if(value==="AC"){
- result.innerHTML="0";
-  }
-else if(value==="="){
- result.innerHTML=eval(result.innerHTML)
-
-}
-else{
-  if(result.innerHTML==="0"){
-  result.innerHTML=value
-  }
-  else{
-result.innerHTML+=value
-  }
-}
-
-  }
 
